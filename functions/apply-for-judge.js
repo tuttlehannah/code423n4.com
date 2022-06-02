@@ -1,5 +1,5 @@
 const { Octokit } = require("@octokit/core");
-const { token } = require("./_config");
+const { token } = require("../_config");
 const dedent = require("dedent");
 
 const octokit = new Octokit({ auth: token });

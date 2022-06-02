@@ -2,7 +2,7 @@ const { Octokit } = require("@octokit/core");
 const { createPullRequest } = require("octokit-plugin-create-pull-request");
 const sharp = require("sharp");
 const { verify } = require("hcaptcha");
-const { token } = require("./_config");
+const { token } = require("../_config");
 const dedent = require("dedent");
 
 const OctokitClient = Octokit.plugin(createPullRequest);

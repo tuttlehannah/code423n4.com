@@ -4,7 +4,7 @@ const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 const { verify } = require("hcaptcha");
 
-const { apiKey, domain } = require("./_config");
+const { apiKey, domain } = require("../_config");
 
 const mailgun = new Mailgun(formData);
 const mg = mailgun.client({ username: "api", key: apiKey });
