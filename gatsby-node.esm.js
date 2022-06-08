@@ -6,7 +6,7 @@ import { graphql } from "@octokit/graphql";
 import format from "date-fns/format";
 import webpack from "webpack";
 
-const { token } = require("../_config");
+const { token } = require("./_config");
 
 const octokit = new Octokit({
   auth: token,
