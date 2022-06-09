@@ -4,5 +4,6 @@ public
 .cache
 .nova
 .env
-.env.development
+.env.*
+!.env.sample
 yarn-error.log
