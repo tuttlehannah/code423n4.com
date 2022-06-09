@@ -1,3 +1,8 @@
+const dotenv = require("dotenv");
+
+dotenv.config({ path: `.env` })
+dotenv.config({ path: `.${process.env.NODE_ENV}` });
+
 function csvDatetimeParser(item) {
   return new Date(item);
 }
