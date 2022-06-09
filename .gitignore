@@ -6,5 +6,5 @@ public
 .env
 .env.*
 !.env.sample
-yarn-error.log
 .netlify
+yarn-error.log
