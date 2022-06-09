@@ -12,8 +12,17 @@
   to = "/images/code4rena_is.pdf"
   status = 200  
 
+[context.production.environment]
+  C4_ENV = "production"
+
 [context.deploy-preview]
   ignore = "bash ./netlify-ignore-branch.sh"
+
+[context.deploy-preview.environment]
+  C4_ENV = "staging"
+
+[context.staging.environment]
+  C4_ENV = "staging"
 
 [functions]
   directory = "functions/"
