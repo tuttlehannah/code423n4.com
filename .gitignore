@@ -7,3 +7,4 @@ public
 .env.*
 !.env.sample
 yarn-error.log
+.netlify
